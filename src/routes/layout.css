@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-surface-primary: #F3EBE2;
+  --color-surface-secondary: #C5BEB6;
+  --color-surface-inverse: #1A1A1A;
+  --color-foreground-primary: #1A1A1A;
+  --color-foreground-secondary: #3D3D3D;
+  --color-foreground-muted: #6B6B6B;
+  --color-foreground-inverse: #FFFFFF;
+  --color-accent-primary: #D4916E;
+  
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  
+  --font-sans: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-primary text-foreground-primary font-sans;
+  }
+}

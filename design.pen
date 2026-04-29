@@ -1,0 +1,3267 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "7z9w2",
+      "x": 0,
+      "y": 0,
+      "name": "DÉFIS – Landing",
+      "width": 1440,
+      "fill": "$--surface-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "x1j3P",
+          "name": "Header",
+          "width": "fill_container",
+          "padding": [
+            24,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZD3Hb",
+              "name": "Brand",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Wwlgu",
+                  "name": "brandMark",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$--surface-inverse",
+                  "cornerRadius": 9999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Nvrnm",
+                      "name": "brandMarkText",
+                      "fill": "$--accent-primary",
+                      "content": "D",
+                      "fontFamily": "$--font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "HHqk4",
+                  "name": "brandName",
+                  "fill": "$--foreground-primary",
+                  "content": "DÉFIS",
+                  "fontFamily": "$--font-heading",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pFuJC",
+              "name": "Nav",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "peKPu",
+                  "name": "navA",
+                  "fill": "$--foreground-secondary",
+                  "content": "L'Association",
+                  "fontFamily": "$--font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "v8Q3Y",
+                  "name": "navB",
+                  "fill": "$--foreground-secondary",
+                  "content": "Nos Actions",
+                  "fontFamily": "$--font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "D2FYv",
+                  "name": "navC",
+                  "fill": "$--foreground-secondary",
+                  "content": "La Fondation",
+                  "fontFamily": "$--font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "3JJNT",
+                  "name": "navD",
+                  "fill": "$--foreground-secondary",
+                  "content": "Soutenir",
+                  "fontFamily": "$--font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "ry6qM",
+                  "name": "ctaHeader",
+                  "fill": "$--accent-primary",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YRel0",
+                      "name": "ctaHeaderText",
+                      "fill": "$--foreground-inverse",
+                      "content": "Faire un don",
+                      "fontFamily": "$--font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "NEmcm",
+                      "name": "ctaHeaderIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--foreground-inverse"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pgbhV",
+          "name": "Hero",
+          "width": "fill_container",
+          "gap": 24,
+          "padding": [
+            16,
+            48,
+            48,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "TdPQ4",
+              "name": "Hero / Pitch",
+              "width": 760,
+              "fill": "$--surface-secondary",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 32,
+              "padding": 56,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gSjhb",
+                  "name": "heroLocBadge",
+                  "fill": "$--surface-primary",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "aLpu8",
+                      "name": "heroLocIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "map-pin",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--accent-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X64EE",
+                      "name": "heroLocText",
+                      "fill": "$--foreground-primary",
+                      "content": "Clermont-Ferrand · Puy-de-Dôme",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "SmrKv",
+                  "name": "heroTitle",
+                  "fill": "$--foreground-primary",
+                  "content": "Diversité, Éducation, Formation,\nInsertion, Solidarité.",
+                  "lineHeight": 1.08,
+                  "fontFamily": "Geist",
+                  "fontSize": 44,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "RWu1k",
+                  "name": "heroSub",
+                  "fill": "$--foreground-secondary",
+                  "content": "Agir aujourd'hui, c'est permettre à quelqu'un de ne pas rester seul demain.\nRejoignez-nous pour créer du lien social et valoriser les talents de chacun.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Geist",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "eaptB",
+                  "name": "heroCtas",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eZB0p",
+                      "name": "ctaPrimary",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 9999,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RtSmA",
+                          "name": "ctaPrimaryText",
+                          "fill": "$--foreground-inverse",
+                          "content": "Devenir bénévole",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "QFj4K",
+                          "name": "ctaPrimaryIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-inverse"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ovUjy",
+                      "name": "ctaSecondary",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 9999,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QAYQv",
+                          "name": "ctaSecondaryText",
+                          "fill": "$--foreground-primary",
+                          "content": "Découvrir nos actions",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SSTYF",
+                  "name": "heroStats",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "F8QLf",
+                      "name": "statA",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xyNBO",
+                          "name": "statAVal",
+                          "fill": "$--accent-primary",
+                          "content": "4×",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 32,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qEwnX",
+                          "name": "statALabel",
+                          "fill": "$--foreground-secondary",
+                          "content": "maraudes / semaine",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zWErx",
+                      "name": "statB",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UK32x",
+                          "name": "statBVal",
+                          "fill": "$--accent-primary",
+                          "content": "9+",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 32,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IdpNx",
+                          "name": "statBLabel",
+                          "fill": "$--foreground-secondary",
+                          "content": "ateliers artistiques",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "heoxl",
+                      "name": "statC",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QK4oH",
+                          "name": "statCVal",
+                          "fill": "$--accent-primary",
+                          "content": "100%",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 32,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ANCOE",
+                          "name": "statCLabel",
+                          "fill": "$--foreground-secondary",
+                          "content": "bénévole & solidaire",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PoplZ",
+              "name": "Hero / Visual",
+              "width": 520,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6ulzN",
+                  "name": "Visual Tile",
+                  "width": "fill_container",
+                  "height": 420,
+                  "fill": "$--surface-secondary",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8p8f7",
+                      "name": "Photo Placeholder",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "mSOOV",
+                          "name": "phIcon",
+                          "width": 40,
+                          "height": 40,
+                          "iconFontName": "users",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aQHGS",
+                          "name": "phCaption",
+                          "fill": "$--foreground-inverse",
+                          "content": "Maraudes solidaires – Clermont",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i1e6Y",
+                  "name": "Teaser Tile",
+                  "width": "fill_container",
+                  "fill": "$--surface-inverse",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JQgzH",
+                      "name": "teaserPill",
+                      "fill": "$--accent-primary",
+                      "cornerRadius": 9999,
+                      "gap": 6,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ypesD",
+                          "name": "teaserPillIcon",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "disc",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-inverse"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OmHN8",
+                          "name": "teaserPillText",
+                          "fill": "$--foreground-inverse",
+                          "content": "PROJET PHARE",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "hMPZS",
+                      "name": "teaserTitle",
+                      "fill": "$--foreground-inverse",
+                      "content": "La Fondation",
+                      "fontFamily": "Geist",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ntbNk",
+                      "name": "teaserSub",
+                      "opacity": 0.7,
+                      "fill": "$--foreground-inverse",
+                      "content": "Collectif rap né d'un atelier d'écriture en accueil de jour.",
+                      "lineHeight": 1.45,
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qSSGi",
+                      "name": "teaserLink",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "0Rz1B",
+                          "name": "teaserLinkText",
+                          "fill": "$--accent-primary",
+                          "content": "Écouter le projet",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "JtJ6v",
+                          "name": "teaserLinkIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CTQHt",
+          "name": "Section · Mission",
+          "width": "fill_container",
+          "gap": 24,
+          "padding": [
+            80,
+            48,
+            40,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "lQbRz",
+              "name": "missionLeft",
+              "width": 420,
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uiHtr",
+                  "name": "missionTag",
+                  "fill": "$--accent-primary-soft",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "wAwnz",
+                      "name": "missionTagDot",
+                      "fill": "$--accent-primary",
+                      "width": 8,
+                      "height": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "KNxn4",
+                      "name": "missionTagText",
+                      "fill": "$--accent-primary",
+                      "content": "NOTRE MISSION",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "u3psg",
+                  "name": "missionTitle",
+                  "fill": "$--foreground-primary",
+                  "content": "Créer du lien,\nredonner confiance.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Geist",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "oQXEL",
+                  "name": "missionSub",
+                  "fill": "$--foreground-secondary",
+                  "content": "DÉFIS œuvre pour l'insertion sociale, éducative et\nculturelle — avec une attention particulière aux\npersonnes en situation de précarité, d'isolement ou\nd'exclusion.",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lXo8u",
+              "name": "missionRight",
+              "width": "fill_container",
+              "fill": "$--surface-secondary",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                24,
+                28
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dOBmU",
+                  "name": "pillarsRowA",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dbxmS",
+                      "name": "pillarA",
+                      "width": "fill_container",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 12,
+                      "gap": 12,
+                      "padding": [
+                        18,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "nZV0u",
+                          "name": "pillarAIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "heart-handshake",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HsknZ",
+                          "name": "pillarAText",
+                          "fill": "$--foreground-primary",
+                          "content": "Créer du lien social",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Cd5ne",
+                      "name": "pillarB",
+                      "width": "fill_container",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 12,
+                      "gap": 12,
+                      "padding": [
+                        18,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "I77Ou",
+                          "name": "pillarBIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "shield-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8fzC3",
+                          "name": "pillarBText",
+                          "fill": "$--foreground-primary",
+                          "content": "Redonner confiance",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FZkNI",
+                  "name": "pillarsRowB",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "M3ln9",
+                      "name": "pillarC",
+                      "width": "fill_container",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 12,
+                      "gap": 12,
+                      "padding": [
+                        18,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Zf70Z",
+                          "name": "pillarCIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "sparkles",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yUrE2",
+                          "name": "pillarCText",
+                          "fill": "$--foreground-primary",
+                          "content": "Valoriser les talents",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qYZRv",
+                      "name": "pillarD",
+                      "width": "fill_container",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 12,
+                      "gap": 12,
+                      "padding": [
+                        18,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "rkaMQ",
+                          "name": "pillarDIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "key-round",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ljSgZ",
+                          "name": "pillarDText",
+                          "fill": "$--foreground-primary",
+                          "content": "Favoriser l'insertion",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j3WRg",
+          "name": "Section · Actions",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "qRMOt",
+              "name": "actionsHead",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "frvoj",
+                  "name": "actionsHeadLeft",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l2nkt",
+                      "name": "actionsTag",
+                      "fill": "$--accent-primary-soft",
+                      "cornerRadius": 9999,
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "UqCVb",
+                          "name": "actionsTagDot",
+                          "fill": "$--accent-primary",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "pwDyi",
+                          "name": "actionsTagText",
+                          "fill": "$--accent-primary",
+                          "content": "NOS ACTIONS",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LTW9x",
+                      "name": "actionsTitle",
+                      "fill": "$--foreground-primary",
+                      "content": "Trois terrains d'engagement\nau quotidien.",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Geist",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "rgPbj",
+                  "name": "actionsSub",
+                  "fill": "$--foreground-secondary",
+                  "content": "De la maraude du soir aux ateliers du dimanche,\nchaque action crée un pont.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Kvzl9",
+              "name": "actionsGrid",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TxeUf",
+                  "name": "Card · Maraudes",
+                  "width": "fill_container",
+                  "height": 380,
+                  "fill": "$--surface-inverse",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S21Mq",
+                      "name": "cardAIcon",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "$--accent-primary",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "JcLJY",
+                          "name": "cardAIconGlyph",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "heart-handshake",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-inverse"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I2sgo",
+                      "name": "cardABody",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mqS79",
+                          "name": "cardATitle",
+                          "fill": "$--foreground-inverse",
+                          "content": "Maraudes solidaires",
+                          "fontFamily": "Geist",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GAPoW",
+                          "name": "cardADesc",
+                          "opacity": 0.7,
+                          "fill": "$--foreground-inverse",
+                          "content": "Distribution de nourriture, vêtements,\nboissons chaudes et présence humaine —\nlà où l'isolement se fait le plus rude.",
+                          "lineHeight": 1.55,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lk9B6",
+                      "name": "cardAFoot",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 8,
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "s1XMS",
+                          "name": "cardAFootIcon",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "moon",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mE653",
+                          "name": "cardAFootText",
+                          "fill": "$--foreground-primary",
+                          "content": "LUN · MER · VEN · DIM — 19h → 22h30",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dTbeB",
+                  "name": "Card · Ateliers",
+                  "width": "fill_container",
+                  "height": 380,
+                  "fill": "$--surface-secondary",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ACC9u",
+                      "name": "cardBIcon",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "h6KyM",
+                          "name": "cardBIconGlyph",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "palette",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sCP1E",
+                      "name": "cardBBody",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "U0SYv",
+                          "name": "cardBTitle",
+                          "fill": "$--foreground-primary",
+                          "content": "Ateliers éducatifs",
+                          "fontFamily": "Geist",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RcfsZ",
+                          "name": "cardBDesc",
+                          "fill": "$--foreground-secondary",
+                          "content": "Écriture, musique, MAO,\nthéâtre, vidéo, boxe, MMA,\nfooting, bricolage.",
+                          "lineHeight": 1.55,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AbPCy",
+                      "name": "cardBTags",
+                      "width": "fill_container",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QsYAJ",
+                          "name": "tag1",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            6,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6ahHf",
+                              "name": "tag1T",
+                              "fill": "$--foreground-primary",
+                              "content": "Écriture",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 10,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wLARh",
+                          "name": "tag2",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            6,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "AOLqH",
+                              "name": "tag2T",
+                              "fill": "$--foreground-primary",
+                              "content": "Musique",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 10,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CmRGV",
+                          "name": "tag3",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            6,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CMXz6",
+                              "name": "tag3T",
+                              "fill": "$--foreground-primary",
+                              "content": "Théâtre",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 10,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pS0rI",
+                          "name": "tag4",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            6,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "diDnh",
+                              "name": "tag4T",
+                              "fill": "$--foreground-primary",
+                              "content": "Boxe",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 10,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sjnef",
+                          "name": "tag5",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            6,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "EPurr",
+                              "name": "tag5T",
+                              "fill": "$--accent-primary",
+                              "content": "+5",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 10,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "76G4t",
+                  "name": "Card · Point Fixe",
+                  "width": "fill_container",
+                  "height": 380,
+                  "fill": "$--surface-secondary",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "P25u0",
+                      "name": "cardCIcon",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "$--accent-primary-soft",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "rzVKD",
+                          "name": "cardCIconGlyph",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "coffee",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q1QEj",
+                      "name": "cardCBody",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "u1LN9",
+                          "name": "cardCTitle",
+                          "fill": "$--foreground-primary",
+                          "content": "Point fixe du dimanche",
+                          "fontFamily": "Geist",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TSarg",
+                          "name": "cardCDesc",
+                          "fill": "$--foreground-secondary",
+                          "content": "Petit-déjeuner et accueil des personnes\nisolées : un moment chaud, sans jugement,\nouvert à tou·te·s.",
+                          "lineHeight": 1.55,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PMBxJ",
+                      "name": "cardCFoot",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 8,
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "65Uig",
+                          "name": "cardCFootIcon",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "sun",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zX1Uv",
+                          "name": "cardCFootText",
+                          "fill": "$--foreground-primary",
+                          "content": "CHAQUE DIMANCHE MATIN",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "giwjE",
+          "name": "Section · La Fondation",
+          "width": "fill_container",
+          "gap": 24,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "eBWZE",
+              "name": "fondLeft",
+              "width": "fill_container",
+              "fill": "$--surface-secondary",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 28,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AM2ck",
+                  "name": "fondTag",
+                  "fill": "$--surface-primary",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Snvqa",
+                      "name": "fondTagIcon",
+                      "width": 12,
+                      "height": 12,
+                      "iconFontName": "music",
+                      "iconFontFamily": "lucide",
+                      "fill": "$--accent-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cGynl",
+                      "name": "fondTagText",
+                      "fill": "$--accent-primary",
+                      "content": "PROJET PHARE · MUSIQUE",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "5DSN9",
+                  "name": "fondTitle",
+                  "fill": "$--foreground-primary",
+                  "content": "De l'atelier d'écriture\nà la scène.",
+                  "lineHeight": 1.08,
+                  "fontFamily": "Geist",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "kgZEI",
+                  "name": "fondBody",
+                  "fill": "$--foreground-secondary",
+                  "content": "Né d'un atelier d'écriture en accueil de jour à\nClermont-Ferrand, le collectif LA FONDATION transforme\nles récits de vie et les épreuves en œuvres musicales\nauthentiques.\n\nDeux albums disponibles : Accueil de Jour (avec\nDemi-Portion, L'Hexaler, Petitcopek) et le nouvel opus\nHors-Pistes — sortis sur CD et plateformes.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Oc6Cg",
+                  "name": "fondActions",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tM3gO",
+                      "name": "fondCta",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 9999,
+                      "gap": 10,
+                      "padding": [
+                        14,
+                        22
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "swGpb",
+                          "name": "fondCtaText",
+                          "fill": "$--foreground-inverse",
+                          "content": "Site officiel",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "0DuDR",
+                          "name": "fondCtaIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "external-link",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-inverse"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NcibD",
+                      "name": "fondCtaB",
+                      "fill": "$--surface-primary",
+                      "cornerRadius": 9999,
+                      "gap": 10,
+                      "padding": [
+                        14,
+                        22
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fB4SV",
+                          "name": "fondCtaBText",
+                          "fill": "$--foreground-primary",
+                          "content": "Écouter",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "0XLDJ",
+                          "name": "fondCtaBIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "play",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-primary"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SstjS",
+              "name": "fondRight",
+              "width": 460,
+              "fill": "$--surface-inverse",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6IFQD",
+                  "name": "Cover",
+                  "width": "fill_container",
+                  "height": 360,
+                  "fill": "$--foreground-secondary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "padding": 24,
+                  "justifyContent": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pJDmA",
+                      "name": "coverOverlay",
+                      "width": 346,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JF2tX",
+                          "name": "coverEyebrow",
+                          "opacity": 0.7,
+                          "fill": "$--foreground-inverse",
+                          "content": "DISCOGRAPHIE · 2 ALBUMS",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Dlmnq",
+                          "name": "coverAlbumTitle",
+                          "fill": "$--accent-primary",
+                          "textGrowth": "fixed-width",
+                          "width": 285,
+                          "content": "ACCUEIL DE JOUR",
+                          "lineHeight": 1,
+                          "fontFamily": "Geist",
+                          "fontSize": 42,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xat7Y",
+                          "name": "coverAlbumSub",
+                          "fill": "$--foreground-inverse",
+                          "content": "LA FONDATION",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7bBQC",
+                  "name": "player",
+                  "width": "fill_container",
+                  "fill": "$--foreground-secondary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TIwDn",
+                      "name": "playerRow",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ki4xj",
+                          "name": "playBtn",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "$--accent-primary",
+                          "cornerRadius": 9999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "opxdS",
+                              "name": "playIcon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "play",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--foreground-inverse"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sEzOA",
+                          "name": "playerMeta",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SddwO",
+                              "name": "trackTitle",
+                              "fill": "$--foreground-inverse",
+                              "content": "Ghost City",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "JcRcu",
+                              "name": "trackSub",
+                              "opacity": 0.6,
+                              "fill": "$--foreground-inverse",
+                              "content": "La Fondation · Accueil de Jour",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "OMFtY",
+                          "name": "trackTime",
+                          "opacity": 0.6,
+                          "fill": "$--foreground-inverse",
+                          "content": "2:47 / 3:24",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tczT2",
+                      "name": "progress",
+                      "width": "fill_container",
+                      "height": 4,
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 9999,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FlZ12",
+                          "name": "progressFill",
+                          "width": 310,
+                          "height": 4,
+                          "fill": "$--accent-primary",
+                          "cornerRadius": 9999
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gvnrE",
+          "name": "Section · Boutique",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "6mfrf",
+              "name": "boutHead",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CD4ZG",
+                  "name": "boutHeadL",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HRJsY",
+                      "name": "boutTag",
+                      "fill": "$--accent-primary-soft",
+                      "cornerRadius": 9999,
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "E6Oin",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "shopping-bag",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--accent-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2m0Y2",
+                          "fill": "$--accent-primary",
+                          "content": "BOUTIQUE SOLIDAIRE",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "NJa02",
+                      "fill": "$--foreground-primary",
+                      "content": "Soutenir, c'est aussi acheter.",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Geist",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "DaTwr",
+                  "fill": "$--foreground-secondary",
+                  "content": "Les créations des projets\nDÉFIS, sur HelloAsso.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ErpIF",
+              "name": "projectLaFondation",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8KKho",
+                  "name": "projHead",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wIl5l",
+                      "name": "projHeadL",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Sd7e3",
+                          "fill": "$--foreground-muted",
+                          "content": "PROJET · LA FONDATION",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "5qaly",
+                          "fill": "$--foreground-primary",
+                          "content": "Albums & vêtements",
+                          "fontFamily": "Geist",
+                          "fontSize": 22,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IKc9B",
+                      "name": "projLink",
+                      "fill": "$--surface-secondary",
+                      "cornerRadius": 9999,
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JV3lu",
+                          "fill": "$--foreground-primary",
+                          "content": "Voir tout sur HelloAsso",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "ykfNr",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "external-link",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-primary"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tiogZ",
+                  "name": "prodGrid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "N1QY7",
+                      "name": "prod1",
+                      "width": "fill_container",
+                      "fill": "$--surface-secondary",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "j7rdq",
+                          "name": "p1Img",
+                          "width": "fill_container",
+                          "height": 200,
+                          "fill": "$--surface-inverse",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "hxTju",
+                              "width": 48,
+                              "height": 48,
+                              "iconFontName": "shirt",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "UYAOM",
+                          "fill": "$--foreground-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "T-shirt La Fondation\nNoir « Classic »",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1kOmA",
+                          "fill": "$--accent-primary",
+                          "content": "20 €  ·  Acheter →",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XRQHQ",
+                      "name": "prod2",
+                      "width": "fill_container",
+                      "fill": "$--surface-secondary",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "BOFhi",
+                          "name": "p2Img",
+                          "width": "fill_container",
+                          "height": 200,
+                          "fill": "$--accent-primary",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "p54Ld",
+                              "width": 64,
+                              "height": 64,
+                              "iconFontName": "disc-3",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--surface-inverse"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "04Olp",
+                          "fill": "$--foreground-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Album « Accueil de Jour »\nLa Fondation · CD",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Kg8QU",
+                          "fill": "$--accent-primary",
+                          "content": "10 €  ·  Acheter →",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eYUEC",
+                      "name": "prod3",
+                      "width": "fill_container",
+                      "fill": "$--surface-secondary",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "0d9JA",
+                          "name": "p3Img",
+                          "width": "fill_container",
+                          "height": 200,
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "hz4n7",
+                              "width": 48,
+                              "height": 48,
+                              "iconFontName": "shirt",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--surface-inverse"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "qmMff",
+                          "fill": "$--foreground-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "T-shirt La Fondation\nBlanc « Classic »",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EMbwJ",
+                          "fill": "$--accent-primary",
+                          "content": "20 €  ·  Acheter →",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hUc8s",
+                      "name": "prod4",
+                      "width": "fill_container",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "LyAba",
+                          "name": "p4Img",
+                          "width": "fill_container",
+                          "height": 200,
+                          "fill": "$--accent-primary",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "ELZnI",
+                              "width": 64,
+                              "height": 64,
+                              "iconFontName": "disc-3",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--surface-inverse"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "1DZ8P",
+                          "fill": "$--foreground-inverse",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Album « Hors-Pistes »\nLa Fondation · CD",
+                          "lineHeight": 1.3,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "q6y9T",
+                          "fill": "$--accent-primary",
+                          "content": "10 €  ·  Nouveau →",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BZsx4",
+          "name": "Section · Soutenir",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "XbE0e",
+              "name": "supHead",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "a95TM",
+                  "name": "supHeadLeft",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SJo8Q",
+                      "name": "supTag",
+                      "fill": "$--accent-primary-soft",
+                      "cornerRadius": 9999,
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "HXxwW",
+                          "name": "supTagDot",
+                          "fill": "$--accent-primary",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "kG8Hw",
+                          "name": "supTagText",
+                          "fill": "$--accent-primary",
+                          "content": "SOUTENIR DÉFIS",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "FeLGt",
+                      "name": "supTitle",
+                      "fill": "$--foreground-primary",
+                      "content": "Chaque geste compte,\nchaque don agit.",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Geist",
+                      "fontSize": 40,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "0IEnz",
+                  "name": "supSub",
+                  "fill": "$--foreground-secondary",
+                  "content": "Des repas distribués aux ateliers financés,\nvotre aide devient terrain.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Geist",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "N4IGL",
+              "name": "supGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Yl7UV",
+                  "name": "donRow",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ukv1t",
+                      "name": "Tile · Don",
+                      "width": "fill_container",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 24,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "R5qEi",
+                          "name": "donHead",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "HT1TV",
+                              "name": "donIcon",
+                              "width": 44,
+                              "height": 44,
+                              "fill": "$--accent-primary",
+                              "cornerRadius": 12,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "Lq1a5",
+                                  "name": "donIconGlyph",
+                                  "width": 22,
+                                  "height": 22,
+                                  "iconFontName": "heart",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$--foreground-inverse"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "XDvhw",
+                              "name": "donLabel",
+                              "opacity": 0.6,
+                              "fill": "$--foreground-inverse",
+                              "content": "DON GÉNÉRAL",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "OG1Ev",
+                          "name": "donTitle",
+                          "fill": "$--foreground-inverse",
+                          "content": "Soutenez l'ensemble\nde nos actions.",
+                          "lineHeight": 1.2,
+                          "fontFamily": "Geist",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1JLL6",
+                          "name": "donList",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "oYkB9",
+                              "name": "checkA",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "HSogZ",
+                                  "name": "checkAIcon",
+                                  "width": 14,
+                                  "height": 14,
+                                  "iconFontName": "check",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$--accent-primary"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "gMfnL",
+                                  "name": "checkAT",
+                                  "opacity": 0.8,
+                                  "fill": "$--foreground-inverse",
+                                  "content": "25 € = 10 repas chauds distribués lors d'une maraude",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "sVi5M",
+                              "name": "checkB",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "X81R7",
+                                  "name": "checkBIcon",
+                                  "width": 14,
+                                  "height": 14,
+                                  "iconFontName": "check",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$--accent-primary"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "MnWsp",
+                                  "name": "checkBT",
+                                  "opacity": 0.8,
+                                  "fill": "$--foreground-inverse",
+                                  "content": "50 € = un kit hygiène complet pour une semaine",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "TF8Jy",
+                              "name": "checkC",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "U1Qia",
+                                  "name": "checkCIcon",
+                                  "width": 14,
+                                  "height": 14,
+                                  "iconFontName": "check",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$--accent-primary"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "alzSy",
+                                  "name": "checkCT",
+                                  "opacity": 0.8,
+                                  "fill": "$--foreground-inverse",
+                                  "content": "100 € = une séance d'atelier musique financée",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VApe5",
+                          "name": "donCta",
+                          "width": "fill_container",
+                          "fill": "$--accent-primary",
+                          "cornerRadius": 12,
+                          "gap": 10,
+                          "padding": [
+                            18,
+                            20
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PKCHk",
+                              "name": "donCtaText",
+                              "fill": "$--foreground-inverse",
+                              "content": "Donner sur HelloAsso",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "PNLxT",
+                              "name": "donCtaIcon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--foreground-inverse"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IecSL",
+                      "name": "Tile · Maraudes",
+                      "width": "fill_container",
+                      "fill": "$--accent-primary",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 24,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "UCj88",
+                          "name": "marHead",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "aOTtE",
+                              "name": "marIcon",
+                              "width": 44,
+                              "height": 44,
+                              "fill": "$--surface-inverse",
+                              "cornerRadius": 12,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "JjsRG",
+                                  "width": 20,
+                                  "height": 20,
+                                  "iconFontName": "footprints",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$--foreground-inverse"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "gi8C5",
+                              "opacity": 0.7,
+                              "fill": "$--foreground-inverse",
+                              "content": "MARAUDES SOLIDAIRES",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "zvNqv",
+                          "fill": "$--foreground-inverse",
+                          "content": "Repas, écoute,\nliens humains.",
+                          "lineHeight": 1.2,
+                          "fontFamily": "Geist",
+                          "fontSize": 26,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gbHxr",
+                          "opacity": 0.9,
+                          "fill": "$--foreground-inverse",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Chaque maraude permet d'aller à la rencontre des personnes en situation de précarité dans les rues de Clermont-Ferrand.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PbX7n",
+                          "name": "marCta",
+                          "width": "fill_container",
+                          "fill": "$--surface-inverse",
+                          "cornerRadius": 12,
+                          "gap": 10,
+                          "padding": [
+                            18,
+                            20
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DL9Sm",
+                              "fill": "$--foreground-inverse",
+                              "content": "Soutenir les maraudes",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "9eGU7",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--foreground-inverse"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l0Wqe",
+                  "name": "Tile · Bénévolat",
+                  "width": "fill_container",
+                  "fill": "$--surface-secondary",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 36,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FYlal",
+                      "name": "benHead",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HrRC2",
+                          "name": "benIcon",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "$--surface-inverse",
+                          "cornerRadius": 12,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "TxqJ3",
+                              "name": "benIconGlyph",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "hand-heart",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--accent-primary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tMUmT",
+                          "name": "benLabel",
+                          "fill": "$--foreground-muted",
+                          "content": "DEVENIR BÉNÉVOLE",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZRDNw",
+                      "name": "benTitle",
+                      "fill": "$--foreground-primary",
+                      "content": "Donnez du temps, recevez du sens.",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist",
+                      "fontSize": 26,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qxCOO",
+                      "name": "benRoles",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "6R6F4",
+                          "name": "role1",
+                          "width": "fill_container",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 12,
+                          "gap": 12,
+                          "padding": [
+                            14,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "zV4X5",
+                              "name": "role1Icon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "truck",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--accent-primary"
+                            },
+                            {
+                              "type": "text",
+                              "id": "yDea1",
+                              "name": "role1Text",
+                              "fill": "$--foreground-primary",
+                              "content": "Maraudes soir (LUN · MER · VEN · DIM)",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "jSqM5",
+                              "name": "role1Arrow",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--foreground-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VzLKr",
+                          "name": "role2",
+                          "width": "fill_container",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 12,
+                          "gap": 12,
+                          "padding": [
+                            14,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "lYR4Z",
+                              "name": "role2Icon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "mic",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--accent-primary"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ErwmM",
+                              "name": "role2Text",
+                              "fill": "$--foreground-primary",
+                              "content": "Animer un atelier (écriture, musique, boxe…)",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "ufdCS",
+                              "name": "role2Arrow",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--foreground-muted"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Pw9GX",
+                          "name": "role3",
+                          "width": "fill_container",
+                          "fill": "$--surface-primary",
+                          "cornerRadius": 12,
+                          "gap": 12,
+                          "padding": [
+                            14,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "3Gds0",
+                              "name": "role3Icon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "calendar",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--accent-primary"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Z16gi",
+                              "name": "role3Text",
+                              "fill": "$--foreground-primary",
+                              "content": "Organiser un événement culturel",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "GNX2a",
+                              "name": "role3Arrow",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "arrow-right",
+                              "iconFontFamily": "lucide",
+                              "fill": "$--foreground-muted"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vIMTU",
+                      "name": "benCta",
+                      "width": "fill_container",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 12,
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        20
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5Bgy7",
+                          "name": "benCtaText",
+                          "fill": "$--foreground-inverse",
+                          "content": "Nous contacter",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "JaMWC",
+                          "name": "benCtaIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--foreground-inverse"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ri6aF",
+          "name": "Section · Contact",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            24,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "BeM0k",
+              "name": "contactBand",
+              "width": "fill_container",
+              "fill": "$--accent-primary-soft",
+              "cornerRadius": 16,
+              "gap": 32,
+              "padding": [
+                32,
+                40
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6Fv8x",
+                  "name": "contactTextBlock",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Zg77b",
+                      "name": "contactTitle",
+                      "fill": "$--foreground-primary",
+                      "content": "Une idée, un partenariat, une question ?",
+                      "fontFamily": "Geist",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kbwCk",
+                      "name": "contactSub",
+                      "fill": "$--foreground-secondary",
+                      "content": "Frédéric Santa Maria (Président) · Nicolas Gonzalez (Coordination)",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4cRCm",
+                  "name": "contactForm",
+                  "width": 440,
+                  "fill": "$--surface-primary",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sqGyd",
+                      "name": "contactInputWrap",
+                      "width": "fill_container",
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "h8SNw",
+                          "name": "contactInput",
+                          "fill": "$--foreground-muted",
+                          "content": "votre-email@exemple.fr",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RZfjt",
+                      "name": "contactSubmit",
+                      "fill": "$--surface-inverse",
+                      "cornerRadius": 9999,
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        18
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ADlmp",
+                          "name": "contactSubmitText",
+                          "fill": "$--foreground-inverse",
+                          "content": "Envoyer",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ep6zW",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$--surface-inverse",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            48,
+            32,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "T5TZJ",
+              "name": "footerMain",
+              "width": "fill_container",
+              "gap": 48,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UNpYF",
+                  "name": "footerBrand",
+                  "width": 320,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3K2kT",
+                      "name": "footerBrandRow",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ud0Wg",
+                          "name": "footerMark",
+                          "width": 36,
+                          "height": 36,
+                          "fill": "$--accent-primary",
+                          "cornerRadius": 9999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "FEM80",
+                              "name": "footerMarkText",
+                              "fill": "$--foreground-inverse",
+                              "content": "D",
+                              "fontFamily": "Geist",
+                              "fontSize": 18,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "tbf8j",
+                          "name": "footerName",
+                          "fill": "$--foreground-inverse",
+                          "content": "DÉFIS",
+                          "fontFamily": "Geist",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "VT8No",
+                      "name": "footerTagline",
+                      "opacity": 0.6,
+                      "fill": "$--foreground-inverse",
+                      "content": "Diversité · Éducation · Formation · Insertion · Solidarité.\nClermont-Ferrand, Puy-de-Dôme.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bHXit",
+                  "name": "footerCols",
+                  "gap": 64,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3Nu2E",
+                      "name": "colNav",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vgZJb",
+                          "name": "colNavHead",
+                          "opacity": 0.4,
+                          "fill": "$--foreground-inverse",
+                          "content": "NAVIGATION",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PLVzb",
+                          "name": "colNavA",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "L'Association",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UutqS",
+                          "name": "colNavB",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "Nos Actions",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mdtll",
+                          "name": "colNavC",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "La Fondation",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ruR6J",
+                          "name": "colNavD",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "Soutenir",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ibgwh",
+                      "name": "colActA",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "3Shw0",
+                          "name": "colActAHead",
+                          "opacity": 0.4,
+                          "fill": "$--foreground-inverse",
+                          "content": "AGIR",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Z89gG",
+                          "name": "colActA1",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "Faire un don",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g05mN",
+                          "name": "colActA2",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "Devenir bénévole",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8DXMv",
+                          "name": "colActA3",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "Boutique HelloAsso",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QWMgh",
+                          "name": "colActA4",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "Soutenir les maraudes",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ahl25",
+                      "name": "colContact",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GNwoV",
+                          "name": "colContactHead",
+                          "opacity": 0.4,
+                          "fill": "$--foreground-inverse",
+                          "content": "CONTACT",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wkgmn",
+                          "name": "colContact1",
+                          "fill": "$--foreground-inverse",
+                          "content": "contact@defis-asso.fr",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bkvqH",
+                          "name": "colContact2",
+                          "opacity": 0.75,
+                          "fill": "$--foreground-inverse",
+                          "content": "5 rue Jean Giono",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Sg3zX",
+                          "name": "colContact3",
+                          "opacity": 0.6,
+                          "fill": "$--foreground-inverse",
+                          "content": "63000 Clermont-Ferrand",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XwH8W",
+              "name": "footerDivider",
+              "opacity": 0.1,
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$--foreground-inverse"
+            },
+            {
+              "type": "frame",
+              "id": "nqXle",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "gap": 16,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Yg2RM",
+                  "name": "footerCopy",
+                  "opacity": 0.45,
+                  "fill": "$--foreground-inverse",
+                  "content": "© 2026 Association DÉFIS — loi 1901, non lucrative.",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 11,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "PUlUq",
+                  "name": "footerLegal",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EkCRc",
+                      "name": "footerLegalA",
+                      "opacity": 0.45,
+                      "fill": "$--foreground-inverse",
+                      "content": "Mentions légales",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AFA1c",
+                      "name": "footerLegalB",
+                      "opacity": 0.45,
+                      "fill": "$--foreground-inverse",
+                      "content": "Confidentialité",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VVMJy",
+                      "name": "footerLegalC",
+                      "fill": "$--accent-primary",
+                      "content": "Conçu avec cœur · 2026",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "--accent-primary": {
+      "type": "color",
+      "value": "#D4916E"
+    },
+    "--accent-primary-soft": {
+      "type": "color",
+      "value": "#F2DFD3"
+    },
+    "--font-body": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "--font-heading": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "--font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    },
+    "--foreground-inverse": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--foreground-muted": {
+      "type": "color",
+      "value": "#6B6B6B"
+    },
+    "--foreground-primary": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "--foreground-secondary": {
+      "type": "color",
+      "value": "#3D3D3D"
+    },
+    "--rounded-2xl": {
+      "type": "number",
+      "value": 16
+    },
+    "--rounded-lg": {
+      "type": "number",
+      "value": 8
+    },
+    "--rounded-xl": {
+      "type": "number",
+      "value": 12
+    },
+    "--surface-inverse": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "--surface-primary": {
+      "type": "color",
+      "value": "#F3EBE2"
+    },
+    "--surface-secondary": {
+      "type": "color",
+      "value": "#C5BEB6"
+    }
+  }
+}
