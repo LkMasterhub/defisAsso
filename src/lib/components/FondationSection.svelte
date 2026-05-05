@@ -52,7 +52,7 @@
 							src={base + m.photo}
 							alt="Portrait de {m.name}"
 							loading="lazy"
-							class="aspect-square w-full object-cover"
+							class="aspect-[3/4] w-full object-cover object-top"
 						/>
 						<figcaption class="flex flex-col gap-0.5 px-3 pb-3">
 							<span class="font-mono text-xs uppercase tracking-wider text-accent-primary">{m.name}</span>
@@ -149,7 +149,7 @@
 
 	<div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
 		{#each LA_FONDATION_GALLERY.slice(0, 6) as src, i (src)}
-			<div class="group relative aspect-square overflow-hidden rounded-xl bg-surface-secondary">
+			<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-secondary">
 				<img
 					src={base + src}
 					alt="La Fondation — photo {i + 1}"
