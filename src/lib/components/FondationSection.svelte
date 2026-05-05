@@ -3,6 +3,7 @@
 	import ExternalLink from 'lucide-svelte/icons/external-link';
 	import Calendar from 'lucide-svelte/icons/calendar';
 	import Film from 'lucide-svelte/icons/film';
+	import { base } from '$app/paths';
 	import MediaPlayer from './MediaPlayer.svelte';
 	import {
 		LA_FONDATION_ALBUM,
@@ -48,7 +49,7 @@
 				{#each memberPhotos as m (m.name)}
 					<figure class="flex flex-col gap-2 overflow-hidden rounded-xl bg-surface-primary/60">
 						<img
-							src={m.photo}
+							src={base + m.photo}
 							alt="Portrait de {m.name}"
 							loading="lazy"
 							class="aspect-square w-full object-cover"
@@ -150,7 +151,7 @@
 		{#each LA_FONDATION_GALLERY.slice(0, 6) as src, i (src)}
 			<div class="group relative aspect-square overflow-hidden rounded-xl bg-surface-secondary">
 				<img
-					{src}
+					src={base + src}
 					alt="La Fondation — photo {i + 1}"
 					loading="lazy"
 					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

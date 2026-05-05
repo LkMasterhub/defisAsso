@@ -1,5 +1,9 @@
 import adapter from '@sveltejs/adapter-node';
 
+// Sous-chemin de déploiement — défini via BASE_PATH (ex: '/defis').
+// Vide en dev local. Lu au build.
+const basePath = process.env.BASE_PATH ?? '';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	compilerOptions: {
@@ -8,6 +12,9 @@ const config = {
 	},
 	kit: {
 		adapter: adapter(),
+		paths: {
+			base: basePath
+		},
 		typescript: {
 			config: (config) => ({
 				...config,
