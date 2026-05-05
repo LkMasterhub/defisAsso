@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Music from 'lucide-svelte/icons/music';
 	import ExternalLink from 'lucide-svelte/icons/external-link';
-	import Play from 'lucide-svelte/icons/play';
 	import Calendar from 'lucide-svelte/icons/calendar';
+	import MediaPlayer from './MediaPlayer.svelte';
 	import {
 		LA_FONDATION_ALBUM,
 		LA_FONDATION_MEMBRES,
 		LA_FONDATION_SOCIAL,
-		LA_FONDATION_STREAMING,
+		LA_FONDATION_IDS,
 		getUpcomingConcerts
 	} from '$lib/lafondation.js';
 
@@ -83,37 +83,19 @@
 			</div>
 		</div>
 
-		<div class="flex flex-1 flex-col gap-4 rounded-2xl bg-surface-inverse p-8 text-foreground-inverse">
-			<div class="flex flex-col gap-2 text-center">
-				<span class="font-mono text-xs uppercase tracking-wider opacity-60">Premier album</span>
-				<span class="text-4xl font-black leading-none tracking-tighter text-accent-primary md:text-5xl">
-					{LA_FONDATION_ALBUM.title.toUpperCase()}
-				</span>
-				<span class="font-mono text-xs uppercase tracking-wider opacity-60">
-					{LA_FONDATION_ALBUM.trackCount} titres · {LA_FONDATION_ALBUM.duration} · {LA_FONDATION_ALBUM.releaseDate}
-				</span>
-			</div>
-
-			<a
-				href={LA_FONDATION_STREAMING.spotifyAlbum}
-				target="_blank"
-				rel="noopener noreferrer"
-				class="mt-2 flex items-center justify-between gap-3 rounded-xl bg-accent-primary px-5 py-4 text-base font-semibold text-foreground-inverse transition-all hover:brightness-110"
-			>
-				<span class="flex items-center gap-2">
-					<Play size={16} />
-					Écouter sur Spotify
-				</span>
-				<ExternalLink size={14} />
-			</a>
-
-			<div class="grid grid-cols-2 gap-2">
-				<a href={LA_FONDATION_STREAMING.appleMusic} target="_blank" rel="noopener noreferrer" class="rounded-lg bg-foreground-inverse/10 px-3 py-2 text-center font-mono text-xs font-semibold transition-all hover:bg-foreground-inverse/20">Apple Music</a>
-				<a href={LA_FONDATION_STREAMING.deezer} target="_blank" rel="noopener noreferrer" class="rounded-lg bg-foreground-inverse/10 px-3 py-2 text-center font-mono text-xs font-semibold transition-all hover:bg-foreground-inverse/20">Deezer</a>
-			</div>
+		<div class="flex flex-1 flex-col gap-4">
+			<MediaPlayer
+				spotifyAlbumId={LA_FONDATION_IDS.spotifyAlbum}
+				deezerAlbumId={LA_FONDATION_IDS.deezerAlbum}
+				appleAlbumId={LA_FONDATION_IDS.appleAlbum}
+				appleAlbumSlug={LA_FONDATION_IDS.appleAlbumSlug}
+				albumBadge="Premier album"
+				albumTitle={LA_FONDATION_ALBUM.title}
+				albumMeta="{LA_FONDATION_ALBUM.trackCount} titres · {LA_FONDATION_ALBUM.duration} · {LA_FONDATION_ALBUM.releaseDate}"
+			/>
 
 			{#if nextConcert}
-				<div class="mt-2 flex flex-col gap-2 rounded-xl border border-foreground-inverse/10 p-4">
+				<div class="flex flex-col gap-2 rounded-2xl bg-surface-inverse p-5 text-foreground-inverse">
 					<div class="flex items-center gap-2 text-accent-primary">
 						<Calendar size={14} />
 						<span class="font-mono text-xs uppercase tracking-wider">Prochain concert</span>

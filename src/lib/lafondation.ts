@@ -48,6 +48,14 @@ export const LA_FONDATION_STREAMING: StreamingLinks = {
 	deezerArtist: 'https://www.deezer.com/fr/artist/1000342'
 };
 
+export const LA_FONDATION_IDS = {
+	spotifyAlbum: '29RplI6yltzatsL3RamiYD',
+	spotifyArtist: '5WaWD2mUCzzddZseHESFIt',
+	appleAlbum: '1816065560',
+	appleAlbumSlug: 'accueil-de-jour',
+	deezerAlbum: '760566601'
+} as const;
+
 export const LA_FONDATION_ALBUM: Album = {
 	title: 'Accueil de Jour',
 	releaseDate: '31 mai 2025',
