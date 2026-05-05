@@ -2,17 +2,26 @@
 	import Music from 'lucide-svelte/icons/music';
 	import ExternalLink from 'lucide-svelte/icons/external-link';
 	import Calendar from 'lucide-svelte/icons/calendar';
+	import Film from 'lucide-svelte/icons/film';
 	import MediaPlayer from './MediaPlayer.svelte';
 	import {
 		LA_FONDATION_ALBUM,
 		LA_FONDATION_MEMBRES,
 		LA_FONDATION_SOCIAL,
 		LA_FONDATION_IDS,
+		LA_FONDATION_HISTORY,
+		LA_FONDATION_CLIPS,
+		LA_FONDATION_MEMBER_IMAGES,
+		LA_FONDATION_GALLERY,
 		getUpcomingConcerts
 	} from '$lib/lafondation.js';
 
 	const upcoming = getUpcomingConcerts();
 	const nextConcert = upcoming[0];
+	const memberPhotos = LA_FONDATION_MEMBRES.map((m, i) => ({
+		...m,
+		photo: LA_FONDATION_MEMBER_IMAGES[i] ?? LA_FONDATION_MEMBER_IMAGES[0]
+	}));
 </script>
 
 <section id="fondation" class="flex w-full flex-col gap-12 bg-surface-primary px-6 py-20 md:px-12">
@@ -29,20 +38,48 @@
 
 	<div class="flex flex-col gap-6 lg:flex-row">
 		<div class="flex flex-1 flex-col gap-8 rounded-2xl bg-surface-secondary p-8 md:p-12">
-			<h3 class="text-2xl font-bold text-foreground-primary">De l'atelier d'écriture à la scène</h3>
-			<p class="text-base leading-relaxed text-foreground-secondary">
-				Né en 2022 au cœur de l'action sociale, le collectif rap mixte et multi-générationnel transforme les récits de vie et les épreuves en œuvres musicales authentiques.
-				<br /><br />
-				Plus qu'un groupe : un pont entre le travail social et l'industrie culturelle, portant haut les valeurs de DÉFIS.
-			</p>
+			<div class="flex flex-col gap-4">
+				<h3 class="text-2xl font-bold text-foreground-primary">De l'atelier d'écriture à la scène</h3>
+				<p class="text-base leading-relaxed text-foreground-secondary">{LA_FONDATION_HISTORY.intro}</p>
+				<p class="text-base leading-relaxed text-foreground-secondary">{LA_FONDATION_HISTORY.story}</p>
+			</div>
 
 			<div class="grid grid-cols-2 gap-3 md:grid-cols-4">
-				{#each LA_FONDATION_MEMBRES as m (m.name)}
-					<div class="flex flex-col gap-1 rounded-xl bg-surface-primary/60 p-3">
-						<span class="font-mono text-xs uppercase tracking-wider text-accent-primary">{m.name}</span>
-						<span class="text-xs leading-snug text-foreground-secondary">{m.role.split('&')[0].trim()}</span>
-					</div>
+				{#each memberPhotos as m (m.name)}
+					<figure class="flex flex-col gap-2 overflow-hidden rounded-xl bg-surface-primary/60">
+						<img
+							src={m.photo}
+							alt="Portrait de {m.name}"
+							loading="lazy"
+							class="aspect-square w-full object-cover"
+						/>
+						<figcaption class="flex flex-col gap-0.5 px-3 pb-3">
+							<span class="font-mono text-xs uppercase tracking-wider text-accent-primary">{m.name}</span>
+							<span class="text-xs leading-snug text-foreground-secondary">{m.role.split('&')[0].trim()}</span>
+						</figcaption>
+					</figure>
 				{/each}
+			</div>
+
+			<div class="flex flex-col gap-3">
+				<div class="flex items-center gap-2 text-foreground-muted">
+					<Film size={14} />
+					<span class="font-mono text-xs uppercase tracking-wider">Clips</span>
+				</div>
+				<div class="flex flex-wrap gap-2">
+					{#each LA_FONDATION_CLIPS as clip (clip.url)}
+						<a
+							href={clip.url}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex items-center gap-2 rounded-full bg-surface-primary px-4 py-2 text-sm font-medium text-foreground-primary transition-all hover:bg-white"
+						>
+							<span>{clip.title}</span>
+							{#if clip.feat}<span class="font-mono text-xs text-foreground-muted">feat. {clip.feat}</span>{/if}
+							<ExternalLink size={12} />
+						</a>
+					{/each}
+				</div>
 			</div>
 
 			<div class="flex flex-wrap gap-3">
@@ -107,5 +144,18 @@
 				</div>
 			{/if}
 		</div>
+	</div>
+
+	<div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+		{#each LA_FONDATION_GALLERY.slice(0, 6) as src, i (src)}
+			<div class="group relative aspect-square overflow-hidden rounded-xl bg-surface-secondary">
+				<img
+					{src}
+					alt="La Fondation — photo {i + 1}"
+					loading="lazy"
+					class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+				/>
+			</div>
+		{/each}
 	</div>
 </section>
