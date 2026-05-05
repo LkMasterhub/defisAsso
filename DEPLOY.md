@@ -17,9 +17,35 @@ BETTER_AUTH_SECRET=<générer avec openssl rand -base64 32>
 BETTER_AUTH_URL=https://defis.lafondationofficiel.fr/defis
 ```
 
+## Coordonnées serveur (PlanetHoster N0C)
+
+```
+Hôte SSH  : node179-eu.n0c.com (185.221.182.146)
+Port SSH  : 5022
+Domaine   : defis.lafondationofficiel.fr
+Sous-doss : /defis
+Clé SSH   : ~/.ssh/defis (publique : ~/.ssh/defis.pub)
+```
+
+Entrée à ajouter dans `~/.ssh/config` :
+
+```sshconfig
+Host planethoster-defis
+  HostName node179-eu.n0c.com
+  Port 5022
+  User <ton-compte-n0c>
+  IdentityFile ~/.ssh/defis
+  IdentitiesOnly yes
+```
+
+Puis tester : `ssh planethoster-defis`.
+
+Avant la première connexion, copier la clé publique dans le panel N0C
+(SSH Access → Manage Authorized Keys → Coller le contenu de `~/.ssh/defis.pub`).
+
 ## Deux scénarios PlanetHoster
 
-### Scénario A — N0C / HybridCloud (Node.js)
+### Scénario A — N0C / HybridCloud (Node.js) ← **retenu pour cette démo**
 
 Conserver l'adapter actuel `@sveltejs/adapter-node` et garder l'admin
 DB-backed (Drizzle + Better-Auth) fonctionnel.
