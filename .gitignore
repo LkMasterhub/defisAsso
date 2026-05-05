@@ -59,3 +59,12 @@ GEMINI.md
 coverage/
 *.pdf
 doc/
+
+# Secrets / clés (ancrés à la racine du repo)
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+/defis
+/defis.pub
+/*.pub
