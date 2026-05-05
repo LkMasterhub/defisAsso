@@ -5,6 +5,7 @@
 	import BoutiqueSection from '$lib/components/BoutiqueSection.svelte';
 	import SupportSection from '$lib/components/SupportSection.svelte';
 	import { resolveActionIcon } from '$lib/actionIcons.js';
+	import { getDefisPhotoForIcon } from '$lib/defisImages.js';
 	import type { PageData } from './$types.js';
 
 	interface Props {
@@ -36,6 +37,7 @@
 				description={action.description}
 				infoBadge={action.infoBadge ?? ''}
 				icon={resolveActionIcon(action.icon)}
+				image={getDefisPhotoForIcon(action.icon)}
 				inverse={index === 0}
 			/>
 		{/each}

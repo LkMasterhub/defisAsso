@@ -65,3 +65,21 @@ export const DEFIS_GALLERY = [
 	DEFIS_PHOTOS.giletDefisDos,
 	DEFIS_PHOTOS.accueilPointfixeNb
 ] as const;
+
+/**
+ * Mapping icône d'action → photo DÉFIS associée. Renvoie `null` si aucune
+ * photo dédiée n'existe pour cette icône (cas par défaut : on garde
+ * l'icône seule comme visuel sur l'ActionCard).
+ */
+export function getDefisPhotoForIcon(icon: string | null | undefined): DefisPhoto | null {
+	switch (icon) {
+		case 'heart-handshake':
+		case 'hand':
+			return DEFIS_PHOTOS.maraudeEquipe01;
+		case 'coffee':
+		case 'sun':
+			return DEFIS_PHOTOS.accueilPointfixeNb;
+		default:
+			return null;
+	}
+}
