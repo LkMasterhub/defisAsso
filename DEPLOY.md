@@ -1,20 +1,31 @@
-# Déploiement — defis.lafondationofficiel.fr/defis/
+# Déploiement — defis.lafondationofficiel.fr
 
 ## Vue d'ensemble
 
-Le site est livré sous le sous-chemin `/defis` de `defis.lafondationofficiel.fr`.
-Le base path est piloté par la variable d'environnement `BASE_PATH`
-(`svelte.config.js` la lit au build, vide en dev local).
+Le site est servi à la racine du sous-domaine `defis.lafondationofficiel.fr`.
+Côté serveur N0C, l'application est dans le dossier `~/defis/` (filesystem
+path uniquement — pas un sous-chemin URL). Le base path SvelteKit est donc
+**vide** (`BASE_PATH=` au build), piloté par `svelte.config.js`.
 
 ## Variables d'environnement
 
-À définir au build (et au runtime pour adapter-node) :
+À définir côté serveur (via `~/defis/.env`) :
 
 ```bash
-BASE_PATH=/defis
-DATABASE_URL=mysql://user:pass@host:3306/dbname   # si DB MySQL utilisée
-BETTER_AUTH_SECRET=<générer avec openssl rand -base64 32>
-BETTER_AUTH_URL=https://defis.lafondationofficiel.fr/defis
+DB_USER=…
+DB_PASSWORD=…
+DB_NAME=…
+# DB_HOST=localhost     (défaut)
+# DB_PORT=3306          (défaut)
+# BETTER_AUTH_SECRET    (auto-généré et persisté par app.cjs.js au 1er boot)
+```
+
+`DATABASE_URL` est composée automatiquement par `app.cjs.js` à partir des
+`DB_*`. Côté `.htaccess` (déjà configuré) :
+
+```apache
+SetEnv ORIGIN https://defis.lafondationofficiel.fr
+SetEnv NODE_ENV production
 ```
 
 ## Coordonnées serveur (PlanetHoster N0C)
@@ -22,8 +33,8 @@ BETTER_AUTH_URL=https://defis.lafondationofficiel.fr/defis
 ```
 Hôte SSH  : node179-eu.n0c.com (185.221.182.146)
 Port SSH  : 5022
-Domaine   : defis.lafondationofficiel.fr
-Sous-doss : /defis
+Domaine   : defis.lafondationofficiel.fr (racine, pas de sous-chemin)
+App root  : /home/khvkwydh/defis
 Clé SSH   : ~/.ssh/defis (publique : ~/.ssh/defis.pub)
 ```
 
@@ -51,7 +62,7 @@ Conserver l'adapter actuel `@sveltejs/adapter-node` et garder l'admin
 DB-backed (Drizzle + Better-Auth) fonctionnel.
 
 ```bash
-BASE_PATH=/defis npm run build
+BASE_PATH= npm run build
 node build/index.js   # le serveur écoute sur PORT (défaut 3000)
 ```
 
@@ -76,7 +87,7 @@ Bascule sur `@sveltejs/adapter-static` :
    les supprimer du build de démo — elles ne fonctionnent pas en statique.
 5. Build et upload :
    ```bash
-   BASE_PATH=/defis npm run build
+   BASE_PATH= npm run build
    # uploader le contenu de build/ dans le sous-dossier /defis du domaine
    ```
 
@@ -89,8 +100,8 @@ Sous ce scénario :
 ## Vérifications avant push
 
 ```bash
-BASE_PATH=/defis npm run build
-BASE_PATH=/defis npm run preview
+BASE_PATH= npm run build
+BASE_PATH= npm run preview
 # ouvrir http://localhost:4173/defis/ et vérifier :
 # - images chargées (membres, galerie, favicon)
 # - liens header/footer pointent vers /defis/...
