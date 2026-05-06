@@ -56,6 +56,36 @@ export const LA_FONDATION_IDS = {
 	deezerAlbum: '760566601'
 } as const;
 
+export type FeaturedTrack = {
+	title: string;
+	feat?: string;
+	spotify: string;
+	deezer: string;
+	apple: { songId: string; slug: string };
+};
+
+export const LA_FONDATION_FEATURED_TRACKS: FeaturedTrack[] = [
+	{
+		title: 'Mentalité lâche rien',
+		spotify: '6cS0gUer1PCkAVD9MfxfgP',
+		deezer: '3378337131',
+		apple: { songId: '1816065563', slug: 'mentalit%C3%A9-lache-rien' }
+	},
+	{
+		title: 'Nouvel espoir',
+		feat: 'Petitcopek',
+		spotify: '3vwZVhvlwri2zAbPq4NYFH',
+		deezer: '3378337181',
+		apple: { songId: '1816065570', slug: 'nouvel-espoir-feat-petitcopek' }
+	},
+	{
+		title: 'Du même camp',
+		spotify: '1yxLijFLvgWbcTmibgNCXV',
+		deezer: '3378337241',
+		apple: { songId: '1816065580', slug: 'du-m%C3%AAme-camp' }
+	}
+];
+
 export const LA_FONDATION_ALBUM: Album = {
 	title: 'Accueil de Jour',
 	releaseDate: '31 mai 2025',

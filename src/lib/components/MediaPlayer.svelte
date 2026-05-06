@@ -1,5 +1,5 @@
 <script lang="ts">
-	type Platform = 'spotify' | 'deezer' | 'apple';
+	import { playerPlatform, type Platform } from '$lib/stores/playerPlatform.svelte.js';
 
 	interface Props {
 		spotifyArtistId?: string;
@@ -10,7 +10,6 @@
 		albumTitle?: string;
 		albumMeta?: string;
 		albumBadge?: string;
-		default?: Platform;
 	}
 
 	let {
@@ -21,11 +20,10 @@
 		appleAlbumSlug = 'accueil-de-jour',
 		albumTitle,
 		albumMeta,
-		albumBadge,
-		default: defaultPlatform = 'spotify'
+		albumBadge
 	}: Props = $props();
 
-	let selected = $state<Platform>(defaultPlatform);
+	const selected = $derived(playerPlatform.value);
 
 	const spotifySrc = spotifyAlbumId
 		? `https://open.spotify.com/embed/album/${spotifyAlbumId}?utm_source=generator&theme=0`
@@ -90,7 +88,7 @@
 					class:text-foreground-inverse={selected === platform}
 					class:text-foreground-secondary={selected !== platform}
 					class:hover:bg-white={selected !== platform}
-					onclick={() => (selected = platform)}
+					onclick={() => playerPlatform.set(platform)}
 					aria-pressed={selected === platform}
 				>
 					{#if platform === 'spotify'}
