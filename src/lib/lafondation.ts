@@ -26,6 +26,7 @@ export type Concert = {
 	venue: string;
 	city: string;
 	country?: string;
+	time?: string;
 	type?: 'festival' | 'premiere' | 'showcase' | 'residency' | 'other';
 };
 
@@ -119,6 +120,10 @@ export const LA_FONDATION_MEMBRES: Membre[] = [
 ];
 
 export const LA_FONDATION_CONCERTS: Concert[] = [
+	{ date: '06/08/2026', title: 'DEMI FESTIVAL — 10ème éd.', venue: 'Théâtre de la Mer', city: 'Sète (34)', type: 'festival' },
+	{ date: '18/07/2026', title: 'PREMIÈRE PARTIE PETITCOPEK', venue: 'La Belle Roulotte', city: 'Mazeyrat (43)', type: 'premiere' },
+	{ date: '17/07/2026', title: 'PREMIÈRE PARTIE SNIPER', venue: 'Coopérative de Mai', city: 'Clermont-Ferrand', type: 'premiere' },
+	{ date: '21/06/2026', title: 'FÊTE DE LA MUSIQUE', venue: 'Place de la Victoire', city: 'Clermont-Ferrand', time: '21h20', type: 'other' },
 	{ date: '19/12/2025', title: 'AUDITION TREMPLIN KICK OFF', venue: 'Des Lendemains qui chantent', city: 'Tulle (19)', type: 'other' },
 	{ date: '15/11/2025', title: 'PREMIÈRE PARTIE MEDINE', venue: 'Coopérative de Mai', city: 'Clermont-Ferrand', type: 'premiere' },
 	{ date: '21/09/2025', title: 'TDS INVITÉ — Showcase', venue: 'Studio Tour du Sud', city: 'Royat (63)', type: 'showcase' },
@@ -183,6 +188,18 @@ export const LA_FONDATION_HISTORY: History = {
 	}
 };
 
+export type NextProject = {
+	title: string;
+	subtitle: string;
+	cover: string;
+};
+
+export const LA_FONDATION_NEXT_PROJECT: NextProject = {
+	title: 'Hors Pistes',
+	subtitle: 'Prochain projet',
+	cover: '/images/lafondation/horspistes-cover.jpg'
+};
+
 const LF_IMG = '/images/lafondation';
 
 export const LA_FONDATION_MEMBER_IMAGES: string[] = [
@@ -210,7 +227,14 @@ export const LA_FONDATION_STAGE_IMAGES: string[] = [
 	`${LF_IMG}/concert-dj-01.jpg`
 ];
 
+export const LA_FONDATION_PROMO_IMAGES: string[] = [
+	`${LF_IMG}/horspistes-cover.jpg`,
+	`${LF_IMG}/horspistes-dates-ete.jpg`,
+	`${LF_IMG}/demi-festival-lineup.jpg`
+];
+
 export const LA_FONDATION_GALLERY: string[] = [
+	`${LF_IMG}/horspistes-cover.jpg`,
 	...LA_FONDATION_GROUP_IMAGES,
 	...LA_FONDATION_STAGE_IMAGES
 ];

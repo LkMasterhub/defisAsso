@@ -31,23 +31,72 @@ export const DEFIS_PHOTOS = {
 	},
 	maraudeDistribution01: {
 		src: `${DIR}/maraude-distribution-01.jpg`,
-		alt: 'Distribution lors d\'une maraude DÉFIS au crépuscule',
+		alt: "Distribution lors d'une maraude DÉFIS au crépuscule",
 		tags: ['maraude'],
 		width: 1200,
 		height: 1600
 	},
 	giletDefisDos: {
 		src: `${DIR}/gilet-defis-dos.jpg`,
-		alt: 'Gilet jaune « MARAUDE DEFIS » avec logo de l\'association, vu de dos',
+		alt: "Gilet jaune « MARAUDE DEFIS » avec logo de l'association, vu de dos",
 		tags: ['identite', 'maraude'],
 		width: 1047,
 		height: 1600
 	},
 	accueilPointfixeNb: {
 		src: `${DIR}/accueil-pointfixe-nb.jpg`,
-		alt: "Échange au Point Fixe de DÉFIS, photo en noir et blanc",
+		alt: 'Échange au Point Fixe de DÉFIS, photo en noir et blanc',
 		tags: ['accueil'],
 		width: 1600,
+		height: 1200
+	},
+	defisLogoCouleur: {
+		src: `${DIR}/defis-logo-couleur.jpg`,
+		alt: 'Nouveau logo DÉFIS couleur sur fond blanc',
+		tags: ['identite'],
+		width: 900,
+		height: 1200
+	},
+	maraudeChien01: {
+		src: `${DIR}/maraude-chien-01.jpg`,
+		alt: 'Chien en gilet MARAUDE DÉFIS lors d\'une maraude',
+		tags: ['maraude'],
+		width: 900,
+		height: 1200
+	},
+	maraudeLogoJaune: {
+		src: `${DIR}/maraude-logo-jaune.jpg`,
+		alt: 'Logo MARAUDE DÉFIS sur fond jaune',
+		tags: ['identite', 'maraude'],
+		width: 1080,
+		height: 1080
+	},
+	maraudeGiletNouveau: {
+		src: `${DIR}/maraude-gilet-nouveau.jpg`,
+		alt: 'Bénévole DÉFIS portant le nouveau gilet MARAUDE, vu de dos',
+		tags: ['identite', 'maraude'],
+		width: 900,
+		height: 1200
+	},
+	maraudeTerrain01: {
+		src: `${DIR}/maraude-terrain-01.jpg`,
+		alt: 'Maraude nocturne DÉFIS — échange en rue avec des personnes accueillies',
+		tags: ['maraude'],
+		width: 900,
+		height: 1200
+	},
+	maraudeTerrain02: {
+		src: `${DIR}/maraude-terrain-02.jpg`,
+		alt: 'Maraude nocturne DÉFIS — distribution de boissons chaudes',
+		tags: ['maraude'],
+		width: 900,
+		height: 1200
+	},
+	maraudeTerrain03: {
+		src: `${DIR}/maraude-terrain-03.jpg`,
+		alt: 'Bénévoles DÉFIS assis au côté d\'une personne accueillie en rue',
+		tags: ['maraude'],
+		width: 900,
 		height: 1200
 	}
 } as const satisfies Record<string, DefisPhoto>;
@@ -55,14 +104,22 @@ export const DEFIS_PHOTOS = {
 export const DEFIS_MARAUDE = [
 	DEFIS_PHOTOS.maraudeEquipe01,
 	DEFIS_PHOTOS.maraudeRencontre01,
-	DEFIS_PHOTOS.maraudeDistribution01
+	DEFIS_PHOTOS.maraudeDistribution01,
+	DEFIS_PHOTOS.maraudeTerrain01,
+	DEFIS_PHOTOS.maraudeTerrain02,
+	DEFIS_PHOTOS.maraudeTerrain03
 ] as const;
 
 export const DEFIS_GALLERY = [
 	DEFIS_PHOTOS.maraudeEquipe01,
 	DEFIS_PHOTOS.maraudeRencontre01,
 	DEFIS_PHOTOS.maraudeDistribution01,
+	DEFIS_PHOTOS.maraudeTerrain01,
+	DEFIS_PHOTOS.maraudeTerrain02,
+	DEFIS_PHOTOS.maraudeTerrain03,
+	DEFIS_PHOTOS.maraudeChien01,
 	DEFIS_PHOTOS.giletDefisDos,
+	DEFIS_PHOTOS.maraudeGiletNouveau,
 	DEFIS_PHOTOS.accueilPointfixeNb
 ] as const;
 

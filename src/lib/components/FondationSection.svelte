@@ -14,6 +14,7 @@
 		LA_FONDATION_CLIPS,
 		LA_FONDATION_MEMBER_IMAGES,
 		LA_FONDATION_GALLERY,
+		LA_FONDATION_NEXT_PROJECT,
 		getUpcomingConcerts
 	} from '$lib/lafondation.js';
 
@@ -132,6 +133,15 @@
 				albumMeta="{LA_FONDATION_ALBUM.trackCount} titres · {LA_FONDATION_ALBUM.duration} · {LA_FONDATION_ALBUM.releaseDate}"
 			/>
 
+			<div class="overflow-hidden rounded-2xl">
+				<img
+					src={base + LA_FONDATION_NEXT_PROJECT.cover}
+					alt="Pochette {LA_FONDATION_NEXT_PROJECT.title} — La Fondation"
+					loading="lazy"
+					class="w-full object-cover"
+				/>
+			</div>
+
 			{#if nextConcert}
 				<div class="flex flex-col gap-2 rounded-2xl bg-surface-inverse p-5 text-foreground-inverse">
 					<div class="flex items-center gap-2 text-accent-primary">
@@ -140,7 +150,7 @@
 					</div>
 					<span class="text-sm font-semibold leading-tight">{nextConcert.title}</span>
 					<span class="font-mono text-xs opacity-70">
-						{nextConcert.date} · {nextConcert.venue}, {nextConcert.city}{nextConcert.country ? `, ${nextConcert.country}` : ''}
+						{nextConcert.date}{nextConcert.time ? ` · ${nextConcert.time}` : ''} · {nextConcert.venue}, {nextConcert.city}{nextConcert.country ? `, ${nextConcert.country}` : ''}
 					</span>
 				</div>
 			{/if}
