@@ -65,8 +65,16 @@
 
 			<div class="flex flex-col gap-3">
 				<div class="flex items-center gap-2 text-foreground-muted">
-					<Film size={14} />
-					<span class="font-mono text-xs uppercase tracking-wider">Clips</span>
+					<Calendar size={14} />
+					<span class="font-mono text-xs uppercase tracking-wider">Dates de concerts</span>
+				</div>
+				<div class="overflow-hidden rounded-xl">
+					<img
+						src="{base}/images/lafondation/horspistes-dates-ete.jpg"
+						alt="Affiche des dates de concerts La Fondation — été 2026"
+						loading="lazy"
+						class="w-full object-cover"
+					/>
 				</div>
 				<div class="flex flex-wrap gap-2">
 					{#each LA_FONDATION_CLIPS as clip (clip.url)}
@@ -76,6 +84,7 @@
 							rel="noopener noreferrer"
 							class="inline-flex items-center gap-2 rounded-full bg-surface-primary px-4 py-2 text-sm font-medium text-foreground-primary transition-all hover:bg-white"
 						>
+							<Film size={12} />
 							<span>{clip.title}</span>
 							{#if clip.feat}<span class="font-mono text-xs text-foreground-muted">feat. {clip.feat}</span>{/if}
 							<ExternalLink size={12} />
