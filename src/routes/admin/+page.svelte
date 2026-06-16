@@ -1,5 +1,8 @@
 <script lang="ts">
-	import { Users, HeartHandshake, Euro, MessageSquare } from 'lucide-svelte';
+	import Users from 'lucide-svelte/icons/users';
+	import HeartHandshake from 'lucide-svelte/icons/heart-handshake';
+	import Euro from 'lucide-svelte/icons/euro';
+	import MessageSquare from 'lucide-svelte/icons/message-square';
 	
 	const stats = [
 		{ name: 'Bénévoles inscrits', value: '42', icon: Users, color: 'text-blue-500' },

@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { Lock, Mail, ArrowRight } from 'lucide-svelte';
+	import Lock from 'lucide-svelte/icons/lock';
+	import Mail from 'lucide-svelte/icons/mail';
+	import ArrowRight from 'lucide-svelte/icons/arrow-right';
 	
 	interface Props {
 		title: string;

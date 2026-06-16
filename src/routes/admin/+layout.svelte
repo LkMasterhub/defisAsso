@@ -1,5 +1,10 @@
 <script lang="ts">
-	import { LayoutDashboard, HeartHandshake, Mail, LogOut, Settings, Menu } from 'lucide-svelte';
+	import LayoutDashboard from 'lucide-svelte/icons/layout-dashboard';
+	import HeartHandshake from 'lucide-svelte/icons/heart-handshake';
+	import Mail from 'lucide-svelte/icons/mail';
+	import LogOut from 'lucide-svelte/icons/log-out';
+	import Settings from 'lucide-svelte/icons/settings';
+	import Menu from 'lucide-svelte/icons/menu';
 	import { page } from '$app/state';
 	
 	const { children } = $props();

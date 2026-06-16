@@ -1,4 +1,6 @@
 import type { Component } from 'svelte';
+import type { SvelteComponentTyped } from 'svelte';
+import type { IconProps } from 'lucide-svelte';
 import HeartHandshake from 'lucide-svelte/icons/heart-handshake';
 import Palette from 'lucide-svelte/icons/palette';
 import Coffee from 'lucide-svelte/icons/coffee';
@@ -13,7 +15,9 @@ import Dumbbell from 'lucide-svelte/icons/dumbbell';
 import Hand from 'lucide-svelte/icons/hand';
 import Sun from 'lucide-svelte/icons/sun';
 
-export const ACTION_ICONS: Record<string, Component> = {
+type LucideIcon = typeof SvelteComponentTyped<IconProps>;
+
+export const ACTION_ICONS: Record<string, LucideIcon> = {
 	'heart-handshake': HeartHandshake,
 	palette: Palette,
 	coffee: Coffee,
@@ -32,6 +36,6 @@ export const ACTION_ICONS: Record<string, Component> = {
 export const ACTION_ICON_NAMES = Object.keys(ACTION_ICONS);
 
 export function resolveActionIcon(name: string | null | undefined): Component {
-	if (name && ACTION_ICONS[name]) return ACTION_ICONS[name];
-	return Heart;
+	if (name && ACTION_ICONS[name]) return ACTION_ICONS[name] as unknown as Component;
+	return Heart as unknown as Component;
 }

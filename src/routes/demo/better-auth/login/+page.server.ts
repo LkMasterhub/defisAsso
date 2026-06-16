@@ -1,6 +1,6 @@
 import { fail, redirect } from '@sveltejs/kit';
-import type { Actions } from './$types';
-import type { PageServerLoad } from './$types';
+import type { Actions } from './$types.js';
+import type { PageServerLoad } from './$types.js';
 import { auth } from '$lib/server/auth';
 import { APIError } from 'better-auth/api';
 
